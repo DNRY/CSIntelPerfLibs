@@ -35,9 +35,9 @@ test: off
 #      artifacts configuration    #
 #---------------------------------#
 artifacts:
-  - path: CSIntel.Ipp\bin\$(configuration)
+  - path: CSIntel.Ipp\bin\$(configuration)\CSIntel.Ipp.dll
     name: CSIntel.Ipp.dll
-  - path: CSIntel.Mkl\bin\$(configuration)
+  - path: CSIntel.Mkl\bin\$(configuration)\CSIntel.Mkl.dll
     name: CSIntel.Mkl.dll    
   - path: '**\*.nupkg'
 
