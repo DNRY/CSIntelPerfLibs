@@ -24,7 +24,7 @@ before_build:
 - ps: nuget restore
 
 after_build:
-  - ps: pack.ps1
+  - ps: .\pack.ps1
 #---------------------------------#
 #       tests configuration       #
 #---------------------------------#
