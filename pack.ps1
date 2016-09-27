@@ -1,5 +1,5 @@
-$root = (split-path -parent $MyInvocation.MyCommand.Definition) + '\..'
-$version = [System.Reflection.Assembly]::LoadFile("$root\CSIntelPerfLibs\CSIntel.Ipp\bin\Release\CSIntel.Ipp.dll").GetName().Version
+$root = (split-path -parent $MyInvocation.MyCommand.Definition)
+$version = [System.Reflection.Assembly]::LoadFile("$root\CSIntel.Ipp\bin\Release\CSIntel.Ipp.dll").GetName().Version
 $versionStr = "{0}.{1}.{2}" -f ($version.Major, $version.Minor, $version.Build)
 
 Write-Host "Setting .nuspec version tag to $versionStr"
