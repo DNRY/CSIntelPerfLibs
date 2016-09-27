@@ -11,7 +11,7 @@
         <tags>INTEL IPP MKL</tags>
     </metadata>
     <files>
-        <file src="..\CSIntel.Ipp\bin\Release\CSIntel.Ipp.dll" target="lib\net452\CSIntel.Ipp.dll" />
-        <file src="..\CSIntel.Mkl\bin\Release\CSIntel.Mkl.dll" target="lib\net452\CSIntel.Mkl.dll" />
+        <file src="CSIntel.Ipp\bin\Release\CSIntel.Ipp.dll" target="lib\net452\CSIntel.Ipp.dll" />
+        <file src="CSIntel.Mkl\bin\Release\CSIntel.Mkl.dll" target="lib\net452\CSIntel.Mkl.dll" />
     </files>
 </package>

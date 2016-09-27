@@ -19,7 +19,6 @@ configuration: Release
 build:
   project: CSIntelPerfLibs.sln
   publish_nuget: true 
-  include_nuget_references: true
 
 before_build:
 - ps: nuget restore
@@ -35,9 +34,9 @@ test: off
 #      artifacts configuration    #
 #---------------------------------#
 artifacts:
-  - path: CSIntelPerfLibs\CSIntel.Ipp\bin\$(configuration)
+  - path: CSIntel.Ipp\bin\$(configuration)
     name: CSIntel.Ipp.dll
-  - path: CSIntelPerfLibs\CSIntel.Mkl\bin\$(configuration)
+  - path: CSIntel.Mkl\bin\$(configuration)
     name: CSIntel.Mkl.dll    
   - path: '**\*.nupkg'
 
