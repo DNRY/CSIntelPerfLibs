@@ -11,18 +11,22 @@ assembly_info:
   assembly_file_version: "{version}"
   assembly_informational_version: "{version}"
 
+platform: x6 4na 
+
 configuration: Release
 
 build:
   project: CSIntelPerfLibs.sln
+  publish_nuget: true 
+  include_nuget_references: true
 
-after_test:
-  - ps: .\nuget\pack.ps1
+# after_test:
+#   - ps: .\nuget\pack.ps1
 
 artifacts:
-  - path: CSIntelPerfLibs\CSIntel.Ipp\bin\Release\CSIntel.Ipp.dll
+  - path: CSIntelPerfLibs\CSIntel.Ipp\bin\$(configuration)
     name: CSIntel.Ipp.dll
-  - path: CSIntelPerfLibs\CSIntel.Mkl\bin\Release\CSIntel.Mkl.dll
+  - path: CSIntelPerfLibs\CSIntel.Mkl\bin\$(configuration)
     name: CSIntel.Mkl.dll    
   - path: '**\*.nupkg'
 
