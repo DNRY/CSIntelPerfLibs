@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>CSIntelPerfLibs</id>
+        <version>0.1</version>
+        <authors>HanByul Yang</authors>
+        <owners>DNRY</owners>
+        <projectUrl>https://github.com/DNRY/CSIntelPerfLibs</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>C# wrapper for Intel performance library (IPP, MKL)</description>
+    </metadata>
+    <files>
+        <file src="..\CSIntel.Ipp\bin\Release\CSIntel.Ipp.dll" target="lib\net452\CSIntel.Ipp.dll" />
+        <file src="..\CSIntel.Mkl\bin\Release\CSIntel.Mkl.dll" target="lib\net452\CSIntel.Mkl.dll" />
+    </files>
+</package>
