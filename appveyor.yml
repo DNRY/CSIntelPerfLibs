@@ -22,12 +22,13 @@ build:
 
 before_build:
 - ps: nuget restore
+
+after_build:
+  - ps: pack.ps1
 #---------------------------------#
 #       tests configuration       #
 #---------------------------------#
 test: off
-after_test:
-  - ps: pack.ps1
 
 
 #---------------------------------#
