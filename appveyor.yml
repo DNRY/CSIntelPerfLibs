@@ -44,8 +44,8 @@ artifacts:
 #---------------------------------#
 #     deployment configuration    #
 #---------------------------------#
-deploy:
-  provider: NuGet
-  api_key:
-    secure: a9d3a8e3-f04d-44c3-8278-5175fe89ebbf
-  artifact: /.*\.nupkg/
+# deploy:
+#   provider: NuGet
+#   api_key:
+#     secure: 
+#   artifact: /.*\.nupkg/
