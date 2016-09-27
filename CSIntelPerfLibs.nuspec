@@ -8,6 +8,7 @@
         <projectUrl>https://github.com/DNRY/CSIntelPerfLibs</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>C# wrapper for Intel performance library (IPP, MKL)</description>
+        <tags>INTEL IPP MKL</tags>
     </metadata>
     <files>
         <file src="..\CSIntel.Ipp\bin\Release\CSIntel.Ipp.dll" target="lib\net452\CSIntel.Ipp.dll" />
