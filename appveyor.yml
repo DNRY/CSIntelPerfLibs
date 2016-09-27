@@ -26,8 +26,8 @@ before_build:
 #       tests configuration       #
 #---------------------------------#
 test: off
-# after_test:
-#   - ps: .\nuget\pack.ps1
+after_test:
+  - ps: pack.ps1
 
 
 #---------------------------------#
