@@ -39,7 +39,7 @@ artifacts:
     name: CSIntel.Ipp.dll
   - path: CSIntel.Mkl\bin\$(configuration)\CSIntel.Mkl.dll
     name: CSIntel.Mkl.dll    
-  - path: '**\*.nupkg'
+  - path: '**\CSIntelPerfLibs*.nupkg'
 
 #---------------------------------#
 #     deployment configuration    #
