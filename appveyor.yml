@@ -11,8 +11,6 @@ assembly_info:
   assembly_file_version: "{version}"
   assembly_informational_version: "{version}"
 
-platform: x6 4na 
-
 configuration: Release
 
 build:
